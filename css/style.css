@@ -1,0 +1,530 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #424242
+}
+
+/* утилитарные классы */
+.none {
+    display: none !important;
+}
+
+.visually_hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height:0px;
+    display: block;
+    margin-left: -100000px;
+    background: transparent;
+    font-size: 0;
+}
+/* сетка */
+
+.container {
+    width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* header */
+
+.header {
+    width: 1920px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid;
+}
+.header-row {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-nav {
+    margin-left: 172px;
+    color: #292929;
+    font-weight: 500;
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav li:not(:last-child) {
+    margin-right: 70px;
+}
+
+.header-nav a {
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #01996D
+}
+
+.header-login a {
+    color: black;
+    transition: color 0.3s ease;
+
+}
+
+.header-login {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.header-login a:hover {
+    color:#01996D;
+}
+
+.header-login > * + * {
+    margin-left: 35px;
+}
+
+.btn, a.btn {
+    display: inline-block;
+    line-height: 51px;
+    height: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color:#01996D;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: opacity 0.3 ease;
+    
+}
+
+a.btn:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+.big-btn {
+    height: 65px;
+    line-height: 65px;
+    font-size: 25px;
+}
+
+
+/* main home */
+
+.home {
+    width: 1920px;
+    padding: 175px 0;
+    min-height: 895px;
+    background-image: url('/images/BG.jpg');
+    object-fit: cover;
+}
+
+.home-content {
+    max-width: 440px;
+}
+
+.home-heading {
+    margin-bottom: 30px;
+    color:#01996D;
+    font-weight: 700;
+    font-size: 65px;
+    font-family: Georgia, serif;
+}
+
+.home-text {
+    line-height: 144.5%;
+    margin-bottom: 53px;
+    max-width:  430px;
+}
+
+.home-btn a{
+     height: 65px;
+     line-height: 65px;
+}
+
+/* main how-it work*/
+
+
+.how-it-works {
+    width: 1920px;
+    padding-top: 169px;
+    padding-bottom: 51px
+}
+
+.how-it-works-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 52px, 0;
+
+
+}
+
+.header-title {
+    max-width: 584px;
+}
+
+.header-title h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 157%;
+    margin-bottom: -3px;
+}
+
+.header-title h3 {
+    font-size: 50px;
+    line-height: 157%;
+    font-weight: 700;
+    font-family: Georgia, serif;
+    color:#01996D;
+}
+
+.header-content {
+    max-width: 671px;
+    line-height: 150%;
+    padding-top: 58px;
+}
+
+.how-it-works-steps {
+    display: flex;
+justify-content: space-between;
+}
+
+/* шаг 1*/
+
+.step1 {
+    max-width: 382px;
+}
+
+.step-head {
+    position: relative;
+    padding-top: 135px;
+    padding-left: 88px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 700px;
+    color: black;
+    line-height: 150%;
+    margin-bottom: 55px;
+}
+
+.step-head::before {
+    position: absolute;
+    content: attr(data-number);
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    color: rgba(1, 153, 109, 0.20);
+    left: 0;
+    top:0;
+}
+.step-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%; 
+    margin-bottom: 60px;  
+}
+.step-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* шаг 2 */
+.step2 {
+    max-width: 382px;
+    margin-top:  287px;
+}
+
+.step-head2 {
+    position: relative;
+    padding-top: 135px;
+    padding-left: 88px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 700px;
+    color: black;
+    line-height: 150%;
+    margin-bottom: 55px;
+}
+
+.step-head2::before {
+    position: absolute;
+    content: attr(data-number);
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    color: rgba(1, 153, 109, 0.20);
+    left: 0;
+    top:0;
+}
+.step-text2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%; 
+    margin-bottom: 60px;  
+}
+.step-image2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* шаг 3 */
+.step3 {
+    max-width: 382px;
+    margin-top: 54px;
+}
+
+.step-head3 {
+    position: relative;
+    padding-top: 135px;
+    padding-left: 88px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 700px;
+    color: black;
+    line-height: 150%;
+    margin-bottom: 55px;
+}
+
+.step-head3::before {
+    position: absolute;
+    content: attr(data-number);
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    color: rgba(1, 153, 109, 0.20);
+    left: 0;
+    top:0;
+}
+.step-text3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%; 
+    margin-bottom: 60px;  
+}
+.step-image3 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* секция с видео */
+
+.story {
+    width: 1920px;
+    height: 922px;
+    background-color: #245852; 
+}
+
+.container-story {
+    margin-left:207px;
+    margin-right: 206px;
+}
+
+.story-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 228px;
+    padding-bottom: 177px;
+
+}
+.story-content {
+    padding-right: 27px;
+    
+}
+.story-head {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 157%;
+    font-family: Georgia, serif;
+    color: #fff;
+    max-width: 580px;
+    margin-bottom: 33px;
+}
+.story-text {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 157%;
+    color: #fff;
+    margin-bottom: 57px;
+}
+
+.story-button a {
+    height: 65px;
+    line-height: 65px;
+}
+
+.video-image {
+    border-radius: 17px;
+}
+
+/* секция your product */
+
+/* текстовой блок product*/
+
+
+.product {
+    width: 1920px;
+    height: 922px;
+}
+
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+
+}
+.product-content h2 {
+    color: #424242;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 157%;
+    margin-bottom: 10px;
+}
+
+.product-content h1 {
+    color: #01996D;
+    font-family: Georgia;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 157%;
+    max-width: 584px;
+    margin-bottom: 20px;
+}
+
+
+.product-text p {
+    color: #484848;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157%;
+    width: 530px;
+    margin-bottom: 40px;
+}
+
+.product-btn a {
+    height: 65px;
+    line-height: 65px;
+}
+
+/* селектор product блок card */
+
+
+
+.product-image {
+    position: absolute;
+    width: 638px;
+    height: 573px;
+    margin-left: 69px
+}
+.product-card {
+    position: relative;
+    margin-top: 334px;
+    margin-right: 412px;
+
+}
+
+.card {
+    background-color: #fff;
+    width: 296px;
+    height: 294px;
+    border-radius: 3.7px;
+    box-shadow: 0px 3.6px 18px rgba(165, 165, 165, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 20px 30px;
+}
+.card-title {
+    position: relative;
+    font-weight: 600;
+    line-height: 157%;
+    font-size:14px;
+    padding-bottom: 12px;
+    margin-bottom: 13px;
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 0.75px;
+    left: -7px;
+    right: -7px;
+    bottom: 0px;
+}
+
+.avatar {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.avatar img {
+    margin-bottom: 13px;
+    width: 57px;
+    height: 57px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.card-content h2 {
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.card-content ul {
+    font-size: 10.6px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.card-content ul li + li {
+    margin-top: 20px;
+}
+
+
+/* блак footer */
+
+.footer {
+    width: 1920px;
+    height: 650px;
+    background-color:#245852;
+}
+
+.footer-navigation  {
+   padding-top: 95px;
+}
+
+.footer-navigation ul li + li {
+    padding-top: 60px;
+}
+
+.footer-navigation ul li {
+    color:#fff;
+}
+
+.footer-navigation a {
+    transition: opacity 0.3s ease;
+}
+.footer-navigation a:hover {
+    opacity: 0.8;
+}
+
+.alivio {
+    font-size: 40px;
+    font-family: Lato;
+    font-weight: 900;
+    font-family: "Avenir";
+}

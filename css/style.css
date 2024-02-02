@@ -2,7 +2,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 400;
-    color: #424242
+    color: #424242;
 }
 
 /* утилитарные классы */
@@ -32,10 +32,15 @@ body {
 
 }
 
+@media (max-width: 1399px) {
+    .container {
+        width:100%
+    }
+}
+
 /* header */
 
 .header {
-    width: 1920px;
     padding-top: 17px;
     padding-bottom: 17px;
     border-bottom: 1px solid;
@@ -113,11 +118,36 @@ a.btn:hover {
     font-size: 25px;
 }
 
+@media (max-width: 1199px) {
+    .header-row {
+        justify-content: space-between;
+    }
+    .header-nav {
+        margin-left: 50px;
+    }
+    .header-nav li + li {
+        margin-left: 10px;
+    }
+    .header-login {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .header-nav {
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .header-login {
+        display: none;
+    }
+}
+
 
 /* main home */
 
 .home {
-    width: 1920px;
     padding: 175px 0;
     min-height: 895px;
     background-image: url('/images/BG.jpg');
@@ -147,11 +177,35 @@ a.btn:hover {
      line-height: 65px;
 }
 
+@media (max-width: 800px) {
+    .home {
+        padding: 40px 0;
+        min-height: unset;
+    }
+    .home-heading {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .home-text {
+        font-size: 15px;
+    }
+    .home-btn a {
+        height: 45px;
+        line-height: 45px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .home {
+        background-image: url('/images/BG.jpg');
+    }
+ }
+
 /* main how-it work*/
 
 
 .how-it-works {
-    width: 1920px;
     padding-top: 169px;
     padding-bottom: 51px
 }
@@ -160,8 +214,6 @@ a.btn:hover {
     display: flex;
     justify-content: space-between;
     padding: 52px, 0;
-
-
 }
 
 .header-title {
@@ -189,12 +241,32 @@ a.btn:hover {
     padding-top: 58px;
 }
 
-.how-it-works-steps {
-    display: flex;
-justify-content: space-between;
+@media ( max-width: 1200px) {
+    .how-it-works-heading {
+        flex-direction: column;
+    }
+    .header-title h3 {
+        font-size: 30px;
+        line-height: 150%;
+        padding-bottom: 20px;
+    }
+    .header-title h2 {
+        font-size: 20px;
+    }
+
+    .header-content p{
+        padding-top: 10px;
+        line-height: 120%;
+    }
 }
 
+
+
 /* шаг 1*/
+.how-it-works-steps {
+    display: flex;
+    justify-content: space-between;
+}
 
 .step1 {
     max-width: 382px;
@@ -314,17 +386,30 @@ justify-content: space-between;
     object-fit: cover;
 }
 
+@media (max-width: 1200px) {
+    .how-it-works-steps {
+        flex-direction: column;
+    }
+    .step1 {
+        margin-top: 0px;
+    }
+    .step2 {
+        margin-top: 0px;
+    }
+    .step3 {
+        margin-top: 0px;
+    }
+}
+
 /* секция с видео */
 
 .story {
-    width: 1920px;
-    height: 922px;
+    height: auto;
     background-color: #245852; 
 }
 
 .container-story {
-    margin-left:207px;
-    margin-right: 206px;
+    padding-left: 30px;
 }
 
 .story-row {
@@ -364,14 +449,39 @@ justify-content: space-between;
     border-radius: 17px;
 }
 
+@media (max-width: 1200px) {
+    .story-row {
+        flex-direction: column;
+    }
+    .video-image {
+        margin-top: 30px;
+        padding-right: 30px
+    }
+    .story-button a {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .story-head {
+        font-size: 30px;
+        line-height: 130%
+    }
+    .story-text {
+        font-size: 15px;
+        line-height: 130%;
+    }
+}
+
 /* секция your product */
 
 /* текстовой блок product*/
 
 
 .product {
-    width: 1920px;
-    height: 922px;
+    height: auto;
 }
 
 
@@ -414,6 +524,7 @@ justify-content: space-between;
 .product-btn a {
     height: 65px;
     line-height: 65px;
+    padding-bottom: 30px;
 }
 
 /* селектор product блок card */
@@ -430,6 +541,7 @@ justify-content: space-between;
     position: relative;
     margin-top: 334px;
     margin-right: 412px;
+    padding-bottom: 30px;
 
 }
 
@@ -494,12 +606,57 @@ justify-content: space-between;
     margin-top: 20px;
 }
 
+@media (max-width: 1330px) {
+    .product-row {
+        flex-direction: column;
+    }
+    .product-content {
+        margin-top: 120px; 
+    }
+    .product-image {
+        width: 538px;
+        height: 473px;
+        margin-left: 20px
+    }
+    .card {
+        width: 226px;
+        height: 224px;
+    }
+    .product-card {
+        margin-top: 280px;
+    }
+    .card-content ul {
+        display: none;
+    }
+    .product-img {
+        padding-right: 30px
+    }
+}
+
+@media (max-width: 700px) {
+    .product-conten h2 {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .product-content h1 {
+        font-size: 30px;
+    }
+    .product-btn a {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+    .product-content {
+        margin-top: 80px; 
+    }
+}
+
 
 /* блак footer */
 
 .footer {
-    width: 1920px;
-    height: 650px;
+    height: 654px;
     background-color:#245852;
 }
 
@@ -527,4 +684,25 @@ justify-content: space-between;
     font-family: Lato;
     font-weight: 900;
     font-family: "Avenir";
+}
+@media (max-width: 1100px) {
+    .footer-navigation  {
+        padding-top: 75px;
+     }
+     
+     .footer-navigation ul li + li {
+         padding-top: 50px;
+     }
+}
+@media (max-width: 700px) {
+    .footer-navigation  {
+        padding-top: 55px;
+     }
+     
+     .footer-navigation ul li + li {
+         padding-top: 35px;
+     }
+    .footer {
+        height: 550px;
+    }
 }
